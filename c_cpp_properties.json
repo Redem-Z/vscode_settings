@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "null",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                //添加arm64 头文件路径
+                "${workspaceFolder}/**"
+            ],
+            "forcedInclude": [
+                //添加autoconf.h头文件
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/aarch64-linux-gnu-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm64",
+            "compileCommands": "${workspaceFolder}/compile_commands.json",
+            "browse": {}
+        }
+    ],
+    "version": 4
+}

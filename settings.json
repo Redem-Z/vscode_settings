@@ -18,5 +18,26 @@
         "dateFormat": "YYYY-MM-DD",
     },
     "files.trimTrailingWhitespace": true,
-    "editor.fontFamily": "Consolas, 'STXinwei', monospace"
+    "editor.fontFamily": "Consolas, 'STXinwei', monospace",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/arch/[b-z]*": true,
+        "**/*.cmd": true,
+        "**/*.o.cmd": true,
+        "**/*.o": true,
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/arch/[b-z]*": true,
+        "**/*.cmd": true,
+        "**/*.o.cmd": true,
+        "**/*.o": true,
+    }
 }
