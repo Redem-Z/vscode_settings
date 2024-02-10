@@ -5,17 +5,17 @@
         "Date": "Do not edit",
         "LastEditors": "git config user.name && git config user.email",
         "LastEditTime": "Do not edit",
-        "Description": "",
+        "Description": ""
     },
     // 函数注释
     "fileheader.cursorMode": {
         "description": "",
         "param": "",
-        "return": "",
+        "return": ""
     },
     "fileheader.configObj": {
         "autoAdd": true,
-        "dateFormat": "YYYY-MM-DD",
+        "dateFormat": "YYYY-MM-DD"
     },
     "files.trimTrailingWhitespace": true,
     "editor.fontFamily": "Consolas, 'STXinwei', monospace",

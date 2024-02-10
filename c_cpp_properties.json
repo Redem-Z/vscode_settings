@@ -1,4 +1,7 @@
 {
+    "env": {
+        "myKernelSrcPath": "${workspaceFolder}/kernel"
+    },
     "configurations": [
         {
             "name": "null",
@@ -9,19 +12,27 @@
         {
             "name": "Linux",
             "includePath": [
-                //添加arm64 头文件路径
-                "${workspaceFolder}/**"
+                "${myKernelSrcPath}/arch/arm64/**",
+                "${myKernelSrcPath}/arch/arm64/include/**",
+                "${myKernelSrcPath}/include/**",
+                "${myKernelSrcPath}/include/linux/**",
+                "${myKernelSrcPath}/**"
             ],
             "forcedInclude": [
-                //添加autoconf.h头文件
+                "${myKernelSrcPath}/include/generated/autoconf.h"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/aarch64-linux-gnu-gcc",
             "cStandard": "c17",
             "cppStandard": "c++14",
             "intelliSenseMode": "gcc-arm64",
-            "compileCommands": "${workspaceFolder}/compile_commands.json",
-            "browse": {}
+            "compileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
+            "browse": {
+                "path": [
+                    "${myKernelSrcPath}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
